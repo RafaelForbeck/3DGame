@@ -17,8 +17,12 @@ public class Player : MonoBehaviour
         var vertical = Input.GetAxis("Vertical");
         var horizontal = Input.GetAxis("Horizontal");
 
+        var turn = Input.GetAxis("Mouse X");
+
         transform.position += transform.forward * vertical * speed * Time.deltaTime;
-        transform.Rotate(new Vector3(0, horizontal * turnSpeed * Time.deltaTime, 0));
+        transform.position += transform.right * horizontal * speed * Time.deltaTime;
+
+        transform.Rotate(new Vector3(0, turn * turnSpeed * Time.deltaTime, 0));
 
     }
 }

@@ -1108,7 +1108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  turnSpeed: 180
+  turnSpeed: 400
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
